@@ -14,6 +14,6 @@ spec:
     targetPort: 8080
   - name: remote-java-api
     protocol: TCP
-    nodePort: 30200
-    port: 50000
-    targetPort: 50000
+    nodePort: 30101
+    port: 80 
+    targetPort: 80 

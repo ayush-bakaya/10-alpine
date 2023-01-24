@@ -22,10 +22,9 @@ spec:
         image: kmlaydin/modified-jenkins:latest
         ports:
         - containerPort: 8080
-        - containerPort: 50000
         env:
         - name: DOCKER_HOST
-          value: tcp://localhost:2375
+          value: tcp://localhost:8080
       - name: dind
         image: docker:18.05-dind
         securityContext:
